@@ -69,19 +69,3 @@ def findPackages(path, dataExclude=[]):
 long_description = file("README").read()
 packages, package_data = findPackages("libsortvis")
 version = "0.1"
-setup(
-        name = "sortvis",
-        version = version,
-        description = "Static visualisation of sorting algorithms.",
-        long_description = long_description,
-        author = "Aldo Cortesi",
-        author_email = "aldo@corte.si",
-        url = "http://corte.si/software",
-        packages = packages,
-        package_data = package_data,
-        scripts = ["sortvis"],
-        classifiers = [
-            "Topic :: Scientific/Engineering :: Visualization",
-            "Topic :: Education"
-        ]
-)
